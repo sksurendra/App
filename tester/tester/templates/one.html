@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Detection</title>
+	<style type="text/css">
+	#title{
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 18px;
+		font-weight: 300;
+		text-align:center;
+	}
+	#tb{
+		text-align:center;
+
+	}
+	#body{
+		text-align:center;
+	}
+
+	#align{
+		text-align:center
+	}
+	#doc{
+
+	}
+
+
+	</style>
+	</head>
+
+	<body>
+    <div id="doc">
+	<div id="title">
+	<p id="align">	<div id="logo"> TextLock </div></p>
+  
+	</div>
+	<div id="body">
+		<p> Enter text to be matched : </p>
+		<form action="two.html" method="POST"> {% csrf_token %}
+		<div id="tb"> <textarea cols="80" rows="20" name="data"></textarea>
+        </div>
+	<p id='align'><input type="submit"></p>
+	</form>
+    </div>
+	</body>
+	</html>
